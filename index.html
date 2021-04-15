@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="./js/fases/luiz/faseLuiz.js"></script>
+    <script src="./js/fases/ana/faseAna.js"></script>
+    <script src="./js/fases/lucas/faseLucas.js"></script>
+    <script src="./js/util/popUp.js"></script>
+    <script src="./js/game.js"></script>
+    <title>Family Zumbie</title>
+</head>
+
+<body>
+    <!-- container geral onde engloba todo o conteudo -->
+    <section id="selectSection" class="fullSection selectSection allcenter ">
+        <!-- section para conteudo do selectCharacter -->
+        <section class="allcenter">
+            <!-- div para listar os personagens  -->
+            <div class="selectCharacter displayFlex allcenter lineColum">
+                <div class="personagens displayFlex allcenter">
+                    <div class="character allcenter">
+                        <div><img src="assents/character/lucas.png" alt=""></div>
+                        <div class="nameCharacter">1 - Lucas A.</div>
+                    </div>
+                    <div class="character allcenter">
+                        <div><img src="assents/character/ana.png" alt=""></div>
+                        <div class="nameCharacter">2 - Ana B.</div>
+                    </div>
+                    <div class="character allcenter">
+                        <div><img src="assents/character/luiz.png" alt=""></div>
+                        <div class="nameCharacter">3 - Luiz H.</div>
+                    </div>
+                </div>
+                <div class="gameName">
+                    <h1>FAMILY ZUMBIE</h1>
+                </div>
+                <div class="gameMenu">
+                    <button onclick='boxHistory()'>Historia</button>
+                    <button onclick="startGamer()">Iniciar</button>
+                </div>
+            </div>
+        </section>
+        <section class="battle">
+
+        </section>
+    </section>
+    <section id="boxHistory" class="boxHistory hide">
+
+            <h1>Family Zumbie</h1>
+            <p>
+                Em um mundo de caos e destruição, onde um virus dizimou 97% da população mundial os humanos lutam para sobreviver contra os zumbies, apos 150 anos de luta os humanos passaram a controlar a população zumbie, porem em meio a estes zumbies ouve um casso especifico onde uma familia foi infectada porem não teve sua consciência desvaiada e passou por mutações.</p>
+                Durante uma viagem para fugir dos humanos, a familia de zumbis entram em um antigo shopping que estava com todas as janelas lacradas e aparentemente nenhum sinal de vida, ao entrar no shopping parte da construção desmorona, a familia é divida, onde o pai ficou no primeiro andar a mae com sua elasticidade consegui subir um andar, porem o filho caiu para o subsolo, todos o caminho entre os membros da familia foram bloqueados, e a ultima coisa que a mae conseguiu gritar foi "Nos vemos do outro lado", porem neste momento a familia de zumbi ouviu um grito vindo de um grupo de humanos "Peguem esses vermes malditos", bloqueiem todas as salas e acabem com a raça deles, aqui daremos inicio a essa incrível jornada para sobrevivência desta familia diferente.
+            </p>
+                 <button onclick="boxHistory()">Close</button>
+
+    </section>
+    <section id="battleSection" class="fullSection displayFlex battleSection allcenter hide">
+        <section class="allcenter">
+            <div class="selectCharacter displayFlex allcenter lineColum">
+                <div class="battle displayFlex allcenter">
+                    <div class="characterSelect allcenter">
+                        <div id="newZumbiee"><img src="assents/character/lucas.png" alt=""></div>
+                        <div id="nameCharacter" class="nameCharacter">Lucas A.</div>
+                       
+                    </div>
+                    <div class="faseSelect allcenter">
+                        <div id="stageImage"><img src="assents/stages/stage1.jpeg" alt=""></div>
+                        <div id="stageName" class="stageName">Fase 1</div>
+                    </div>
+                    <div class="enemiSelect allcenter">
+                        <div id="stageHumano" ><img src="assents/enemis/enemi1.jpg" alt=""></div>
+                        <div  class="enemiName">Humano</div>
+                    </div>
+                </div>
+                <div id="faseButton" class="battleButton">
+                    <button class="stageButton" onclick="">Iniciar Fase</button>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+<script src="js/script.js"></script>
+</html>
